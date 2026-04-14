@@ -1,0 +1,189 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   CLINICAL CONTRIBUTIONS PAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.clinical-hero {
+  background-color: var(--navy);
+  padding: var(--section) 0;
+}
+
+.clinical-hero__label {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 1rem 0;
+}
+
+.clinical-hero__heading {
+  color: var(--white);
+  margin: 0 0 1.25rem 0;
+}
+
+.clinical-hero__summary {
+  color: rgba(255,255,255,0.82);
+  margin: 0;
+}
+
+/* Contribution sections */
+.clinical-section {
+  padding: var(--section) 0;
+}
+
+.clinical-section--light { background-color: var(--bg); }
+.clinical-section--alt   { background-color: var(--bg-alt); }
+.clinical-section--dark  { background-color: var(--navy); }
+
+.clinical-section__inner {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.clinical-section__inner--single {
+  max-width: var(--read-w);
+}
+
+.clinical-section__inner--full {
+  max-width: var(--read-w);
+}
+
+.clinical-section__label {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8A6A3C;
+  margin: 0 0 0.9rem 0;
+}
+
+.clinical-section__heading {
+  margin: 0 0 1.25rem 0;
+}
+
+.clinical-section__body {
+  opacity: 0.9;
+  margin: 0;
+}
+
+.clinical-section__body + .clinical-section__body {
+  margin-top: 1rem;
+}
+
+/* Evidence tag */
+.clinical-evidence {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.clinical-evidence__tag {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(197,164,109,0.4);
+  padding: 3px 8px;
+}
+
+.clinical-evidence__text {
+  font-family: var(--sans);
+  font-size: var(--label);
+  color: var(--text-2);
+}
+
+/* Image slot */
+.clinical-image {
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #C5A46D;
+}
+
+.clinical-image--portrait {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.clinical-image--landscape {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.clinical-image__placeholder {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.clinical-image__caption {
+  font-family: var(--sans);
+  font-size: var(--label);
+  color: var(--text-2);
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.clinical-section__link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(197,164,109,0.5);
+  transition: text-decoration-color 0.15s ease;
+}
+
+.clinical-section__link:hover {
+  text-decoration-color: var(--gold);
+}
+
+.clinical-section__link--light {
+  color: rgba(255,255,255,0.82);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(197,164,109,0.4);
+  transition: text-decoration-color 0.15s ease;
+}
+
+.clinical-section__link--light:hover {
+  text-decoration-color: var(--gold);
+}
+
+.clinical-section__inner--victus {
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  gap: 4rem;
+  align-items: center;
+}
+
+.clinical-kalam-image {
+  overflow: hidden;
+  border: 3px solid #C5A46D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Dark section text overrides */
+.clinical-section--dark .clinical-section__heading { color: var(--white); }
+.clinical-section--dark .clinical-section__body    { color: rgba(255,255,255,0.82); opacity: 1; }
+.clinical-section--dark .clinical-section__label   { color: var(--gold); }
+.clinical-section--dark .clinical-evidence__text   { color: rgba(255,255,255,0.5); }
+
+@media (max-width: 768px) {
+  .clinical-section__inner,
+  .clinical-section__inner--victus {
+    grid-template-columns: 1fr;
+  }
+}

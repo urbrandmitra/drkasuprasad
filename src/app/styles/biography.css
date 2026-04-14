@@ -1,0 +1,382 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   BIOGRAPHY PAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* Hero */
+.bio-hero {
+  background-color: var(--navy);
+  padding: var(--section) 0;
+}
+
+.bio-hero__inner {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.bio-hero__image {
+  overflow: hidden;
+  border: 3px solid #C5A46D;
+  width: 100%;
+  height: 480px;
+}
+
+.bio-hero__image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.bio-hero__image-placeholder {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.bio-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bio-hero__label {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+}
+
+.bio-hero__name {
+  color: var(--white);
+  margin: 0;
+}
+
+.bio-hero__pull {
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255,255,255,1);
+  font-style: italic;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.bio-hero__summary {
+  color: rgba(255,255,255,0.82);
+  margin: 0;
+}
+
+/* Credential panel */
+.bio-credentials {
+  background-color: rgba(255,255,255,0.04);
+  border-left: 2px solid rgba(197,164,109,0.3);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.bio-credential-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.bio-credential__name {
+  font-family: var(--sans);
+  font-size: var(--small);
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+}
+
+.bio-credential__detail {
+  font-family: var(--sans);
+  font-size: var(--label);
+  color: var(--gold);
+  margin: 0;
+}
+
+/* Narrative sections */
+.bio-narrative {
+  padding: var(--section) 0;
+  background-color: var(--bg);
+}
+
+.bio-narrative__inner {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.bio-narrative__sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block);
+}
+
+.bio-narrative__section h2 {
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.bio-narrative__section p {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+/* Sticky sidebar */
+.bio-sidebar {
+  position: sticky;
+  top: 5rem;
+}
+
+.bio-sidebar__panel {
+  background-color: var(--navy);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bio-sidebar__heading {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+}
+
+.bio-sidebar__item {
+  border-left: 2px solid var(--gold);
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.bio-sidebar__item-name {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0;
+}
+
+.bio-sidebar__item-detail {
+  font-family: var(--sans);
+  font-size: var(--small);
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+}
+
+.bio-sidebar__item-year {
+  font-family: var(--sans);
+  font-size: var(--label);
+  color: var(--gold);
+  margin: 0;
+}
+
+/* Timeline */
+.bio-timeline {
+  padding: var(--section) 0;
+  background-color: var(--bg-alt);
+}
+
+.bio-timeline__heading {
+  color: var(--text);
+  margin-bottom: 3rem;
+}
+
+.bio-timeline__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-timeline__item {
+  display: grid;
+  grid-template-columns: 64px 28px 1fr;
+  gap: 0 1.5rem;
+}
+
+.bio-timeline__year {
+  text-align: right;
+  padding-top: 0.1rem;
+  padding-bottom: 2rem;
+  font-family: var(--sans);
+  font-size: var(--small);
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.bio-timeline__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-timeline__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background-color: var(--bg-alt);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.bio-timeline__line {
+  width: 1px;
+  flex: 1;
+  background-color: var(--gold);
+  opacity: 0.2;
+  min-height: 2rem;
+}
+
+.bio-timeline__content {
+  padding-bottom: 2rem;
+}
+
+.bio-timeline__title {
+  color: var(--text);
+  margin: 0 0 0.35rem 0;
+}
+
+.bio-timeline__desc {
+  color: var(--text);
+  font-size: var(--small);
+  margin: 0;
+}
+
+/* Return to India */
+.bio-return {
+  padding: var(--section) 0;
+  background-color: var(--navy);
+}
+
+.bio-return__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.bio-return__heading {
+  color: var(--white);
+  margin-bottom: 1.25rem;
+}
+
+.bio-return__body {
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+.bio-return__events {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bio-return__event {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(197,164,109,0.1);
+}
+
+.bio-return__event-year {
+  font-family: var(--sans);
+  font-size: var(--label);
+  font-weight: 600;
+  color: var(--gold);
+  min-width: 88px;
+  padding-top: 0.15rem;
+  letter-spacing: 0.02em;
+}
+
+.bio-return__event-text {
+  font-family: var(--sans);
+  font-size: var(--small);
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* Aviation */
+.bio-aviation {
+  padding: var(--section) 0;
+  background-color: var(--bg);
+}
+
+.bio-aviation__inner {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 5rem;
+  align-items: center;
+}
+
+.bio-aviation__label {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 1rem 0;
+}
+
+.bio-aviation__heading {
+  color: var(--text);
+  margin: 0 0 1.25rem 0;
+}
+
+.bio-aviation__body {
+  color: var(--text);
+  opacity: 0.9;
+  margin: 0;
+}
+
+.bio-aviation__image {
+  background-color: transparent;
+  border: 1px solid rgba(197,164,109,0.22);
+  border-bottom: 3px solid rgba(197,164,109,0.35);
+  height: 240px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.bio-aviation__image-placeholder {
+  font-family: var(--sans);
+  font-size: var(--label);
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bio-hero__inner,
+  .bio-narrative__inner,
+  .bio-return__inner,
+  .bio-aviation__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-hero__image,
+  .bio-aviation__image {
+    height: 240px;
+  }
+
+  .bio-sidebar {
+    position: static;
+  }
+}

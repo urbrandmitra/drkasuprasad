@@ -1,0 +1,291 @@
+/* ============================================================
+   RECOGNITION & IMPACT PAGE — /recognition-impact
+   ============================================================ */
+
+/* Page Header */
+.ri-page-header {
+  background-color: #0A1628;
+  padding: 80px 0 64px;
+}
+
+.ri-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.ri-section-label {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C5A46D;
+  margin: 0 0 20px;
+}
+
+.ri-h1 {
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 300;
+  color: #FAFAFA;
+  line-height: 1.15;
+  margin: 0 0 32px;
+  max-width: 700px;
+}
+
+.ri-header-rule {
+  width: 48px;
+  height: 1px;
+  background-color: #C5A46D;
+}
+
+/* Sections */
+.ri-section {
+  padding: 72px 0;
+}
+
+.ri-section-last {
+  padding-bottom: 96px;
+}
+
+.ri-divider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  border: none;
+  border-top: 1px solid #E5E7EB;
+}
+
+/* Two-column layout */
+.ri-two-col {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.ri-col-label {
+  padding-top: 6px;
+}
+
+.ri-label-text {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8A6A3C;
+}
+
+.ri-col-content {
+  max-width: 650px;
+}
+
+/* Typography */
+.ri-h2 {
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 400;
+  color: #0A1628;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.ri-body {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 18px;
+  line-height: 1.82;
+  color: #0A1628;
+  margin: 0 0 28px;
+}
+
+.ri-body:last-child {
+  margin-bottom: 0;
+}
+
+/* Awards */
+.ri-award-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid #E5E7EB;
+}
+
+.ri-award-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 20px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.ri-award-year {
+  font-family: var(--font-cormorant), serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #C5A46D;
+  padding-top: 2px;
+}
+
+.ri-award-title {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0A1628;
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.ri-award-body {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 15px;
+  color: #6B7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Dignitary photograph grid */
+.ri-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 56px;
+}
+
+.ri-photo-figure {
+  margin: 0;
+}
+
+.ri-photo-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #F4F6F8;
+  overflow: hidden;
+  border: 3px solid #C5A46D;
+}
+
+.ri-photo-img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.ri-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #D1D5DB;
+}
+
+.ri-placeholder-text {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9CA3AF;
+  text-align: center;
+  padding: 16px;
+}
+
+.ri-photo-caption {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6B7280;
+  margin: 12px 0 0;
+}
+
+.ri-caption-placeholder {
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+/* Membership list */
+.ri-membership-list {
+  margin-top: 8px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.ri-membership-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.ri-membership-abbr {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #C5A46D;
+}
+
+.ri-membership-name {
+  font-family: var(--font-source-sans), sans-serif;
+  font-size: 15px;
+  color: #0A1628;
+  line-height: 1.5;
+}
+
+/* Video slot */
+.ri-video-slot {
+  margin-top: 32px;
+}
+
+.ri-video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #F4F6F8;
+  border: 1px dashed #D1D5DB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ri-two-col {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ri-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ri-container {
+    padding: 0 24px;
+  }
+
+  .ri-divider {
+    padding: 0 24px;
+  }
+
+  .ri-section {
+    padding: 48px 0;
+  }
+
+  .ri-page-header {
+    padding: 56px 0 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ri-award-item {
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
+  }
+
+  .ri-membership-item {
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+  }
+}
