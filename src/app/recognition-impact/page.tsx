@@ -81,7 +81,6 @@ export default function RecognitionImpact() {
 
           {/* Dignitary Photographs */}
           <div className="ri-photo-grid">
-            {/* Kalam photograph — cleared, file supplied */}
             <figure className="ri-photo-figure">
               <div className="ri-photo-frame">
                 <Image
@@ -99,7 +98,6 @@ export default function RecognitionImpact() {
               </figcaption>
             </figure>
 
-            {/* President Murmu — to be supplied */}
             <figure className="ri-photo-figure">
               <div className="ri-photo-frame ri-photo-placeholder">
                 <span className="ri-placeholder-text">DIGNITARY PHOTOGRAPH — TO BE SUPPLIED</span>
@@ -214,9 +212,9 @@ export default function RecognitionImpact() {
           <div className="ri-col-content">
             <h2 className="ri-h2">Media Coverage</h2>
             <p className="ri-body">
-              Dr. Reddy&apos;s clinical work has been covered by The Hindu and the Deccan Chronicle.
-              Archive searches are in progress for coverage in the United Kingdom press from the
-              1980s and 1990s.
+              Dr. Reddy&apos;s clinical work has been documented in Indian national press, including
+              The Hindu and the Deccan Chronicle, particularly in relation to the introduction of
+              advanced ophthalmic technologies and institutional developments.
             </p>
 
             {/* Video slot */}

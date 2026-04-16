@@ -16,7 +16,11 @@ export default function Footer() {
                 className="site-footer__brand-link"
                 aria-label="Dr. Kasu Prasad Reddy — Home"
               >
-                <span className="site-footer__brand-name">Dr. Kasu Prasad Reddy</span>
+                <img
+                  src="/logo-dark.svg"
+                  alt="Dr. Kasu Prasad Reddy"
+                  className="site-footer__logo"
+                />
               </Link>
 
               <p className="site-footer__brand-text">
@@ -27,29 +31,17 @@ export default function Footer() {
 
             <nav className="site-footer__column" aria-label="Footer navigation">
               <p className="site-footer__heading">Navigation</p>
-
               <div className="site-footer__stack">
-                <Link href="/biography" className="site-footer__link">
-                  Biography
-                </Link>
-                <Link href="/clinical-contributions" className="site-footer__link">
-                  Clinical Contributions
-                </Link>
-                <Link href="/recognition-impact" className="site-footer__link">
-                  Recognition &amp; Impact
-                </Link>
-                <Link href="/publications" className="site-footer__link">
-                  Publications
-                </Link>
-                <Link href="/contact" className="site-footer__link">
-                  Contact
-                </Link>
+                <Link href="/biography" className="site-footer__link">Biography</Link>
+                <Link href="/clinical-contributions" className="site-footer__link">Clinical Contributions</Link>
+                <Link href="/recognition-impact" className="site-footer__link">Recognition &amp; Impact</Link>
+                <Link href="/publications" className="site-footer__link">Publications</Link>
+                <Link href="/contact" className="site-footer__link">Contact</Link>
               </div>
             </nav>
 
             <div className="site-footer__column">
               <p className="site-footer__heading">Connect</p>
-
               <div className="site-footer__stack">
                 <a
                   href="https://www.linkedin.com/in/drkasuprasad/"
@@ -75,7 +67,6 @@ export default function Footer() {
             <span className="site-footer__copyright">
               &copy; {currentYear} Dr. Kasu Prasad Reddy
             </span>
-
             <div className="site-footer__legal-links">
               <Link href="/privacy-policy" className="site-footer__legal">
                 Privacy Policy

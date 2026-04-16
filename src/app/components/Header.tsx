@@ -18,12 +18,18 @@ export default function Header() {
   return (
     <header className="site-header" role="banner">
       <div className="site-container site-header__inner">
-        <Link
-          href="/"
-          className="site-header__logo-link"
-          aria-label="Dr. Kasu Prasad Reddy — Home"
-        >
-          <span className="site-header__brand-name">Dr. Kasu Prasad Reddy</span>
+
+        <Link href="/" className="site-header__logo-link" aria-label="Dr. Kasu Prasad Reddy — Home">
+          <img
+            src="/logo-dark.svg"
+            alt="Dr. Kasu Prasad Reddy"
+            className="site-header__logo-full"
+          />
+          <img
+            src="/logo-dark-compact.svg"
+            alt="Dr. Kasu Prasad Reddy"
+            className="site-header__logo-compact"
+          />
         </Link>
 
         <nav className="site-header__nav" role="navigation" aria-label="Main navigation">
@@ -44,6 +50,7 @@ export default function Header() {
           <span className="site-header__burger-bar" />
           <span className="site-header__burger-bar" />
         </button>
+
       </div>
 
       {menuOpen && (
