@@ -1,0 +1,91 @@
+.pp-page-header {
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
+}
+
+.pp-section-label {
+  font-family: var(--sans);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin-bottom: 1rem;
+}
+
+.pp-h1 {
+  max-width: 14ch;
+}
+
+.pp-header-rule {
+  width: 100%;
+  height: 1px;
+  background-color: var(--divider);
+  margin-top: 2rem;
+}
+
+.pp-effective {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-2);
+}
+
+.pp-section {
+  padding-top: 2rem;
+  padding-bottom: var(--section);
+}
+
+.pp-content {
+  max-width: 760px;
+}
+
+.pp-block + .pp-block {
+  margin-top: 2.5rem;
+}
+
+.pp-h2 {
+  margin-bottom: 0.9rem;
+}
+
+.pp-body {
+  color: var(--text-2);
+  max-width: 66ch;
+}
+
+.pp-body + .pp-body {
+  margin-top: 1rem;
+}
+
+.pp-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1px;
+}
+
+.pp-link:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .pp-page-header {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .pp-header-rule {
+    margin-top: 1.5rem;
+  }
+
+  .pp-effective {
+    margin-top: 0.9rem;
+  }
+
+  .pp-section {
+    padding-top: 1.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .pp-block + .pp-block {
+    margin-top: 2rem;
+  }
+}

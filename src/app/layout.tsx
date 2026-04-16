@@ -7,6 +7,7 @@ import './styles/clinical.css'
 import './styles/recognition.css'
 import './styles/publications.css'
 import './styles/contact.css'
+import './styles/privacy.css'
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
