@@ -79,7 +79,6 @@ export default function RecognitionImpact() {
             </div>
           </div>
 
-          {/* Dignitary Photographs */}
           <div className="ri-photo-grid">
             <figure className="ri-photo-figure">
               <div className="ri-photo-frame">
@@ -203,8 +202,8 @@ export default function RecognitionImpact() {
 
       <div className="ri-divider" />
 
-      {/* Media Coverage + Video */}
-      <section className="ri-section ri-section-last">
+      {/* Media Coverage */}
+      <section className="ri-section">
         <div className="ri-container ri-two-col">
           <div className="ri-col-label">
             <span className="ri-label-text">Media</span>
@@ -216,16 +215,40 @@ export default function RecognitionImpact() {
               The Hindu and the Deccan Chronicle, particularly in relation to the introduction of
               advanced ophthalmic technologies and institutional developments.
             </p>
+          </div>
+        </div>
+      </section>
 
-            {/* Video slot */}
+      <div className="ri-divider" />
+
+      {/* Clinical Education */}
+      <section className="ri-section ri-section-last">
+        <div className="ri-container ri-two-col">
+          <div className="ri-col-label">
+            <span className="ri-label-text">Clinical Education</span>
+          </div>
+          <div className="ri-col-content">
+            <h2 className="ri-h2">Clinical Education</h2>
+            <p className="ri-body">
+              Dr. Reddy discusses LASIK refractive surgery — candidacy, corneal health, and clinical
+              considerations. A guide for patients and clinicians on the decision-making process behind
+              modern refractive correction.
+            </p>
             <div className="ri-video-slot">
-              <div className="ri-video-placeholder">
-                <span className="ri-placeholder-text">VIDEO TO BE SUPPLIED</span>
+              <div className="ri-video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/hH1zgi2SXV0"
+                  title="LASIK Eye Surgery — Dr. Kasu Prasad Reddy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
+
     </Layout>
   );
 }
